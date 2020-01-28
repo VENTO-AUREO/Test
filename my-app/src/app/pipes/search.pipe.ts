@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+
 import { EventParticipant } from '../event-participant';
 
 @Pipe({

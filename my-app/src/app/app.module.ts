@@ -22,9 +22,9 @@ import { SearchComponent } from './search/search.component';
     EventParticipantsDetailComponent,
     FavoritesComponent,
     RatingComponent,
-    SearchDirective,
-    SearchPipe,
     SearchComponent,
+    SearchDirective,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

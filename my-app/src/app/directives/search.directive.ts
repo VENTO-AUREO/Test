@@ -6,7 +6,9 @@ import {
          Output,
          HostListener
        } from '@angular/core';
+
 import { SearchPipe } from 'pipes';
+
 import { EventParticipant } from '../event-participant';
 
 @Directive({
