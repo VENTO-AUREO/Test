@@ -1,0 +1,79 @@
+.card {
+    position: relative;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+    width: 350px;
+    height: 293px;
+    left: 400px;
+    top: 75px;
+    box-shadow: 0 0 5px;
+    background: white;
+}
+.card p {
+  font-family: Gotham_light_italianic;
+  font-size: 35px;
+  text-align: center;
+}
+.empty {
+  position: absolute;
+  width: 300px;
+  height: 75px;
+  top: 200px;
+  left: 800px;
+}
+.empty p {
+  font-family: Gotham_light_italianic;
+  font-size: 35px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: 350px;
+    height: 293px;
+    left: 200px;
+    top: 75px;
+  }
+  .empty {
+    position: relative;
+    width: 300px;
+    height: 75px;
+    left: 225px;
+  }
+  .empty p {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 768px) {
+  .card {
+    width: 350px;
+    height: 293px;
+    left: 300px;
+    top: 75px;
+  }
+  .empty {
+    position: relative;
+    width: 300px;
+    height: 75px;
+    left: 500px;
+  }
+  .empty p {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 350px;
+    height: 293px;
+    left: 300px;
+    top: 75px;
+  }
+  .empty {
+    position: relative;
+    width: 300px;
+    height: 75px;
+    left: 500px;
+  }
+  .empty p {
+    font-size: 50px;
+  }
+}

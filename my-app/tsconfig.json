@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "services": ["app/services"],
+      "directives": ["app/directives"],
+      "pipes": ["app/pipes"]
+    },
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

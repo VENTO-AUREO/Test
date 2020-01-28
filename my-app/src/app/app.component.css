@@ -1,0 +1,149 @@
+.container{
+  position: relative;
+  width: 1903px;
+  height: 1090px;
+  max-width: 1300px;
+  max-height: auto;
+}
+.nav-bar{
+  position: relative;
+  width: 1903px;
+  height: 50px;
+  border-bottom: 1px solid #dbdbdb;
+  background: white;
+}
+.inscription{
+  position: absolute;
+  width: 283px;
+  height: 77px;
+  display: table;
+  left: 250px;
+  font-family: Billabong_regular;
+  font-size: 36px;
+  text-align: center;
+}
+.inscription p{
+  display: table-cell!important;
+  vertical-align: middle;
+}
+.favorites{
+  position: absolute;
+  width: 283px;
+  height: 77px;
+  display: table;
+  left: 550px;
+  font-family: Billabong_regular;
+  font-size: 36px;
+  text-align: center;
+}
+.favorites p{
+  display: table-cell!important;
+  vertical-align: middle;
+}
+.search {
+  position: absolute;
+  left: 1500px;
+  top: 8px;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 375px;
+    height: 812px;
+    max-width: 1300px;
+  }
+  .nav-bar {
+    width: 755px;
+    height: 400px;
+  }
+  .inscription{
+    width: 283px;
+    height: 77px;
+    left: 25px;
+    font-size: 80px;
+  }
+  .favorites{
+    left: 25px;
+    top: 250px;
+    font-size: 80px;
+  }
+  .search {
+    left: 420px;
+    top: 25px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 768px) {
+  .container {
+    width: 768px;
+    height: 1024px;
+    max-width: 1300px;
+  }
+  .nav-bar {
+    width: 1300px;
+    height: 200px;
+  }
+  .inscription{
+    width: 283px;
+    height: 77px;
+    left: 25px;
+    font-size: 80px;
+  }
+  .favorites{
+    left: 500px;
+    font-size: 80px;
+  }
+  .search {
+    left: 950px;
+    top: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 768px;
+    height: 1024px;
+    max-width: 1300px;
+  }
+  .nav-bar {
+    width: 1300px;
+    height: 200px;
+  }
+  .inscription{
+    width: 283px;
+    height: 77px;
+    left: 25px;
+    font-size: 80px;
+  }
+  .favorites{
+    left: 500px;
+    font-size: 80px;
+  }
+  .search {
+    left: 950px;
+    top: 25px;
+  }
+}
+@media screen and (max-height: 414px) {
+  .container {
+    width: 768px;
+    height: 1024px;
+    max-width: 1300px;
+  }
+  .nav-bar {
+    width: 1005px;
+    height: 100px;
+  }
+  .inscription{
+    width: 283px;
+    height: 77px;
+    left: 25px;
+    font-size: 40px;
+  }
+  .favorites{
+    left: 250px;
+    top: 10px;
+    font-size: 40px;
+  }
+  .search {
+    left: 600px;
+    top: 25px;
+  }
+}

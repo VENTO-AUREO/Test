@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Billabong_regular;
+  src: url(assets/fonts/Billabong_regular.otf);
+}
+@font-face {
+  font-family: Gotham_light_italianic;
+  src: url(assets/fonts/Gotham_light_italianic.otf);
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+a:link{
+  color: black;
+}
+a:visited{
+  color: black;
+}
+a:active{
+  color: black;
+}

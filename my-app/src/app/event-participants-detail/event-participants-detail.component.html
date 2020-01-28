@@ -1,0 +1,12 @@
+<div class="container" *ngIf="eventParticipant">
+  <div class="name-participant"><p>{{eventParticipant.name}}</p></div>
+  <div class="id-participant"><p>ID: {{eventParticipant._id}}</p></div>
+  <div class="balance-participant"><p>Баланс: {{eventParticipant.balance}}</p></div>
+  <label class="checkbox">
+    <input [(ngModel)]="isFavorite" type="checkbox"/>
+    <span>{{changeFavorite()}}</span>
+  </label>
+  <div class="rating">
+    <app-rating [id]="id"></app-rating>
+  </div>
+</div>
