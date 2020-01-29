@@ -1,6 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-
+import { trigger,
+         transition,
+         query,
+         style,
+         stagger,
+         animate } from '@angular/animations';
 import { EventParticipant } from '../event-participant';
 import { EventParticipantsService,
          TransferVarsService } from 'services';
@@ -8,7 +13,19 @@ import { EventParticipantsService,
 @Component({
   selector: 'app-event-participants-list',
   templateUrl: './event-participants-list.component.html',
-  styleUrls: ['./event-participants-list.component.css']
+  styleUrls: ['./event-participants-list.component.css'],
+  animations: [
+    trigger('zoomIn', [
+      transition(':enter', [
+        query('div.card', [
+          style({ opacity: 0, transform: 'scale3d(0.3, 0.3, 0.3)' }),
+          stagger('100ms', [
+            animate('300ms', style({ opacity: 1, transform: 'none' }))
+          ])
+        ])
+      ])
+    ])
+  ]
 })
 export class EventParticipantsListComponent implements OnInit, OnDestroy {
 

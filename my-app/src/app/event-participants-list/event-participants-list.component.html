@@ -1,5 +1,7 @@
-<a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of eventParticipants">
+<div class="container">
+<a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of eventParticipants" [@zoomIn]="eventParticipants.length">
   <div class="card">
     <p>{{ eventParticipant.name }}</p>
   </div>
 </a>
+</div>

@@ -1,149 +1,81 @@
 .container{
-  position: relative;
-  width: 1903px;
-  height: 1090px;
-  max-width: 1300px;
-  max-height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .nav-bar{
-  position: relative;
-  width: 1903px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   height: 50px;
   border-bottom: 1px solid #dbdbdb;
   background: white;
 }
 .inscription{
-  position: absolute;
-  width: 283px;
-  height: 77px;
-  display: table;
-  left: 250px;
+  flex-basis: content;
+  height: 50px;
+  margin: 0 15px 0 0;
   font-family: Billabong_regular;
   font-size: 36px;
   text-align: center;
-}
-.inscription p{
-  display: table-cell!important;
-  vertical-align: middle;
 }
 .favorites{
-  position: absolute;
-  width: 283px;
-  height: 77px;
-  display: table;
-  left: 550px;
+  flex-basis: auto;
+  height: 50px;
   font-family: Billabong_regular;
   font-size: 36px;
   text-align: center;
 }
-.favorites p{
-  display: table-cell!important;
-  vertical-align: middle;
+.search{
+  margin-left: 1200px;
 }
-.search {
-  position: absolute;
-  left: 1500px;
-  top: 8px;
-}
+
 @media screen and (max-width: 767px) {
-  .container {
-    width: 375px;
-    height: 812px;
-    max-width: 1300px;
-  }
   .nav-bar {
-    width: 755px;
+    flex-direction: column;
+    justify-content: space-around;
     height: 400px;
   }
   .inscription{
-    width: 283px;
-    height: 77px;
-    left: 25px;
-    font-size: 80px;
+    font-size: 50px;
   }
   .favorites{
-    left: 25px;
-    top: 250px;
-    font-size: 80px;
+    font-size: 50px;
   }
   .search {
-    left: 420px;
-    top: 25px;
+    margin-left: 100px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 768px) {
-  .container {
-    width: 768px;
-    height: 1024px;
-    max-width: 1300px;
-  }
   .nav-bar {
-    width: 1300px;
+    flex-direction: row;
+    justify-content: center;
     height: 200px;
   }
   .inscription{
-    width: 283px;
-    height: 77px;
-    left: 25px;
-    font-size: 80px;
+    font-size: 50px;
   }
   .favorites{
-    left: 500px;
-    font-size: 80px;
+    font-size: 50px;
   }
   .search {
-    left: 950px;
-    top: 25px;
+    margin-left: 100px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    width: 768px;
-    height: 1024px;
-    max-width: 1300px;
-  }
+@media screen and (min-width: 768px) and (max-width: 1366px) {
   .nav-bar {
-    width: 1300px;
+    flex-direction: row;
+    justify-content: space-between;
     height: 200px;
   }
   .inscription{
-    width: 283px;
-    height: 77px;
-    left: 25px;
-    font-size: 80px;
+    font-size: 60px;
   }
   .favorites{
-    left: 500px;
-    font-size: 80px;
+    font-size: 60px;
   }
   .search {
-    left: 950px;
-    top: 25px;
-  }
-}
-@media screen and (max-height: 414px) {
-  .container {
-    width: 768px;
-    height: 1024px;
-    max-width: 1300px;
-  }
-  .nav-bar {
-    width: 1005px;
-    height: 100px;
-  }
-  .inscription{
-    width: 283px;
-    height: 77px;
-    left: 25px;
-    font-size: 40px;
-  }
-  .favorites{
-    left: 250px;
-    top: 10px;
-    font-size: 40px;
-  }
-  .search {
-    left: 600px;
-    top: 25px;
+    margin-left: 100px;
   }
 }

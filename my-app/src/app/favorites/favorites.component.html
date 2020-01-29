@@ -1,13 +1,15 @@
-<div *ngIf="checkFavoriteEventParticipants(); then empty else notEmpty"></div>
-<ng-template #notEmpty>
-<a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of favoriteEventParticipants">
-  <div class="card">
-    <p>{{ eventParticipant.name }}</p>
-  </div>
-</a>
-</ng-template>
-<ng-template #empty>
-  <div class="empty">
-    <p>Список пуст</p>
-  </div>
-</ng-template>
+<div class="container">
+  <div *ngIf="checkFavoriteEventParticipants(); then empty else notEmpty"></div>
+  <ng-template #notEmpty>
+  <a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of favoriteEventParticipants">
+    <div class="card">
+      <p>{{ eventParticipant.name }}</p>
+    </div>
+  </a>
+  </ng-template>
+  <ng-template #empty>
+    <div class="empty">
+      <p>Список пуст</p>
+    </div>
+  </ng-template>
+</div>
