@@ -31,7 +31,7 @@ export class EventParticipantsListComponent implements OnInit, OnDestroy {
 
   eventParticipants: EventParticipant[];
   subscription: Subscription;
-
+  end = 6;
   constructor (
     private eventParticipantsService: EventParticipantsService,
     private transferVarsService: TransferVarsService) {  }
@@ -42,6 +42,10 @@ export class EventParticipantsListComponent implements OnInit, OnDestroy {
         this.eventParticipants = result;
         this.transferVarsService.setEventParticipants(result);
       });
+  }
+
+  onScroll() {
+    this.end += 6;
   }
 
   ngOnInit() {

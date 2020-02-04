@@ -16,6 +16,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { RatingComponent } from './rating/rating.component';
 import { SearchComponent } from './search/search.component';
 
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { SearchComponent } from './search/search.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    InfiniteScrollModule
   ],
   providers: [
     SearchPipe
