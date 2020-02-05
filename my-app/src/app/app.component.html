@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" (wheel)="onScroll()">
   <nav class="nav-bar">
     <div class="inscription"><a routerLink="">Участники мероприятия</a></div>
     <div class="favorites"><a routerLink="/favorites">Избранное</a></div>
@@ -6,5 +6,5 @@
       <app-search></app-search>
     </div>
   </nav>
-  <router-outlet></router-outlet>
 </div>
+<router-outlet></router-outlet>

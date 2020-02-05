@@ -1,7 +1,9 @@
-<div class="container" (wheel)="onScroll()">
-<a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of eventParticipants | slice:0:end" [@zoomIn]="eventParticipants.length">
-  <div class="card">
-    <p>{{ eventParticipant.name }}</p>
-  </div>
-</a>
+<div class="main" (wheel)="onScroll()">
+<div class="container">
+  <a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of eventParticipants | slice:0:end" [@zoomIn]="eventParticipants.length">
+    <div class="card">
+      <p>{{ eventParticipant.name }}</p>
+    </div>
+  </a>
+</div>
 </div>

@@ -46,7 +46,13 @@ export class EventParticipantsListComponent implements OnInit, OnDestroy {
   }
 
   onScroll() {
-    this.end += 6;
+    let scrollHeight = document.documentElement.scrollHeight;
+    let clientHeight = document.documentElement.clientHeight;
+    let height = scrollHeight-clientHeight;
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop||document.body.scrollTop
+    if (scrollTop === height) {
+      this.end += 6;
+    }
   }
 
   ngOnInit() {
