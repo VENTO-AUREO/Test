@@ -32,6 +32,7 @@ export class EventParticipantsListComponent implements OnInit, OnDestroy {
   eventParticipants: EventParticipant[];
   subscription: Subscription;
   end = 6;
+
   constructor (
     private eventParticipantsService: EventParticipantsService,
     private transferVarsService: TransferVarsService) {  }

@@ -1,14 +1,7 @@
-<div class="container">
+<div class="container" (wheel)="onScroll()">
 <a routerLink="/detail/{{eventParticipant._id}}" *ngFor="let eventParticipant of eventParticipants | slice:0:end" [@zoomIn]="eventParticipants.length">
   <div class="card">
     <p>{{ eventParticipant.name }}</p>
   </div>
 </a>
-</div>
-
-<div
-  infiniteScroll
-  [infiniteScrollDistance]="2"
-  [infiniteScrollThrottle]="1000"
-  (scrolled)="onScroll()">
 </div>
