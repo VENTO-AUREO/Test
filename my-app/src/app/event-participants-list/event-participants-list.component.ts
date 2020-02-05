@@ -44,6 +44,7 @@ export class EventParticipantsListComponent implements OnInit, OnDestroy {
         this.transferVarsService.setEventParticipants(result);
       });
   }
+  
   @HostListener("window:scroll", [])
   onScroll() {
     let scrollHeight = document.documentElement.scrollHeight;
