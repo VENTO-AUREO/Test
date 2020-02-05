@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { trigger,
          transition,
@@ -44,7 +44,7 @@ export class EventParticipantsListComponent implements OnInit, OnDestroy {
         this.transferVarsService.setEventParticipants(result);
       });
   }
-
+  @HostListener("window:scroll", [])
   onScroll() {
     let scrollHeight = document.documentElement.scrollHeight;
     let clientHeight = document.documentElement.clientHeight;
